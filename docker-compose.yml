@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  todo:
+    build: ./todo-app
+    ports: 
+      - 4000:3000
+
