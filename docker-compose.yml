@@ -5,4 +5,10 @@ services:
     build: ./todo-app
     ports: 
       - 4000:3000
+    volumes: 
+      - my-volume:/app
+    environment: 
+      MY_VARIABLE: value
 
+volumes:
+  my-volume:
